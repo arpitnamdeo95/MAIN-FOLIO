@@ -3,10 +3,10 @@ $(document).ready(function () {
         // checks if window is scrolled more than 500px, adds/removes solid class
         if ($(this).scrollTop() > 550) {
             $('.navbar').addClass('solid');
-            $('.back-to-top').addClass('visible');
+            $('.back-to-top').addclass('visible');
         } else {
             $('.navbar').removeClass('solid');
-            $('.back-to-top').removeClass('visible');
+            $('.back-to-top').removeclass('visible');
         }
 
     });
@@ -32,7 +32,7 @@ $(document).ready(function () {
             }, 800, function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
+             window.location.hash= hash;
             });
         } // End if
     });
